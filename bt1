@@ -1,0 +1,9 @@
+#include <iostream.h>
+int main(int argc, char *argv[])
+{
+	cout<<"**************************\n";
+	cout<<"*     THAO CHUONG BANG   *\n";
+	cout<<"*        NGON NGU C      *\n";
+	cout<<"**************************\n";
+	return 0;
+}

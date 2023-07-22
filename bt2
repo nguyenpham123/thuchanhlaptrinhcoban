@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[])
+{
+    int a,b;
+    printf("Nhap nam nay: \n");
+    scanf("%d",&a);
+    printf("Nhap nam sinh cua ban: \n");
+    scanf("%d",&b);
+    printf("Ban sinh nam %d vay ban %d tuoi\n",b,a-b);
+}
