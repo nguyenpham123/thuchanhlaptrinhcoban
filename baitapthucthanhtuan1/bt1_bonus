@@ -1,0 +1,9 @@
+#include <iostream.h>
+int main(int argc, char *argv[])
+{
+	cout<<"Ho ten: ........................................\n";
+	cout<<"Ma so sinh vien: ...............................\n";
+	cout<<"Lop: ...........................................\n";
+	cout<<"So dien thoai: ............. Gioi tinh: ........\n";
+	return 0;
+}
