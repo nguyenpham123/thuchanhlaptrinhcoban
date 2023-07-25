@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+//bt4
+//0850080086 PHAM TU KHOI NGUYEN 08_DH_THMT        
+int main(){
+    int a, b;
+    cout << " Nhap n: ";
+    cin >> a;
+    int n = 0;
+    while(a > 0){
+        b = a % 10;
+        n = n * 10 + b;
+        a = a / 10;
+    }
+    cout <<"Chu so dao nguoc la: "<< n << endl;
+}

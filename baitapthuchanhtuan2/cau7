@@ -1,0 +1,43 @@
+#include <iostream>
+#include <iomanip>
+//bt7
+//0850080086 PHAM TU KHOI NGUYEN 08_DH_THMT
+using namespace std;
+double tongtienthuephong(char loaiphong, int songayo) {
+    double giaphong = 0;
+    switch (loaiphong)
+{
+        case 'A':
+            giaphong = 250000;
+            break;
+        case 'B':
+            giaphong = 200000;
+            break;
+        case 'C':
+            giaphong = 150000;
+            break;
+        default:
+            cout << "Loai phong khong hop le." << endl;
+            return 0;
+}
+    double tongtien = giaphong * songayo;
+    if (songayo > 12) {
+        double phantramgiam = (loaiphong == 'A') ? 0.1 : 0.08;
+        double tonggiam = tongtien * phantramgiam;
+        tongtien -= tonggiam;
+    }
+    return tongtien;
+}
+int main() {
+    char loaiphong;
+    int songayo;
+    cout<<"Moi nhap loai phong (A, B, C): ";
+    cin>>loaiphong;
+    cout<<"Moi nhap so ngay thue: ";
+    cin>>songayo;
+    double tongtien = tongtienthuephong(loaiphong, songayo);
+    if (tongtien > 0) {
+        cout << "Tong tien thue phong la: " << fixed << setprecision(0) << tongtien << " VND" << endl;
+    }
+    return 0;
+}

@@ -1,0 +1,21 @@
+#include <iostream>
+//bt5
+//0850080086 PHAM TU KHOI NGUYEN 08_DH_THMT
+using namespace std;
+int main() {
+    int n;
+    cout << "Nhap n: ";
+    cin >> n;
+    int slchuso = n;
+    int dem = 0;
+    int tong = 0;
+    while (n > 0) {
+        int digit = n % 10;
+        dem++;
+        tong += digit;
+        n /= 10;
+    }
+    cout << "So luong chu so cua " << slchuso << " la: " << dem << endl;
+    cout << "Tong cac chu so cua " << slchuso << " la: " << tong << endl;
+    return 0;
+}
