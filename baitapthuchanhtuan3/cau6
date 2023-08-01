@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int cv(int cd, int cr) {
+    return 2 *(cd+cr);
+}
+int dt(int cd, int cr) {
+    return cd*cr;
+}
+void vehcn(int cd, int cr){
+    for(int i=0;i<cd; i++){
+        for(int j =0;j<cr;j++){
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
+int main() {
+    int cd,cr;
+    cout<<"Nhap chieu dai,chieu rong hinh chu nhat: ";
+    cin >>cd>>cr;
+    int cvv = cv(cd,cr);
+    int dtt = dt(cd,cr);
+    cout<<"Chu vi cua hinh chu nhat la: "<<cvv<<endl;
+    cout<<"Dien tich cua hinh chu nhat la: "<<dtt<<endl;
+    cout<<"Ve hinh chu nhat bang *"<<endl;
+    vehcn(cd,cr);
+    return 0;
+}

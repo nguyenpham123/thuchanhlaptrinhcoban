@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int sonhonhat(int a, int b) {
+    return (a<b)?a:b;
+}
+int main(){
+    int num1, num2, num3;
+    cout<<"Nhap ba so nguyen: ";
+    cin>>num1>>num2>>num3;
+    int min = sonhonhat(num1, num2);
+    min = sonhonhat(min, num3);
+    cout << "So nho nhat trong ba so la: "<<min<<endl;
+    return 0;
+}

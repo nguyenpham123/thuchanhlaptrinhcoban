@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+     int n, kq = 1;
+     cout<<"Nhap so ban muon:";
+     cin>>n;
+     for (int i=1;i<=n;i++)
+     {
+         kq=kq*i;
+     }
+     cout<<kq<<endl;
+     return 0;
+ }

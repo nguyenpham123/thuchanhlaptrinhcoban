@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+double mu(double X, int n)
+{
+    double kq=1.0;
+    if(n<0)
+{
+        X=1/X;
+        n=-n;
+}
+    while(n>0)
+{
+        if(n%2==1)
+{
+            kq*=X;
+}
+        X*=X;
+        n/=2;
+    }
+    return kq;
+}
+int main(){
+    double X;
+    int n;
+    cout << "Nhap so thuc X: ";
+    cin >> X;
+    cout << "Nhap so nguyen n: ";
+    cin >> n;
+    double kq = mu(X, n);
+    cout << "Ket qua X^n = "<<kq<<endl;
+    return 0;
+}

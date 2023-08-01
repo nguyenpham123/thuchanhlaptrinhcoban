@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+void DaoKiSo(int &n) {
+    int dao= 0;
+    while (n>0){
+        int so= n%10;
+        dao= dao*10+so;
+        n/=10;
+    }
+    n =dao;
+}
+int main(){
+    int n= 12345;
+    cout<<"So truoc khi dao ki so: "<<n<<endl;
+    DaoKiSo(n);
+    cout<<"So sau khi dao ki so: "<<n<<endl;
+    return 0;
+}

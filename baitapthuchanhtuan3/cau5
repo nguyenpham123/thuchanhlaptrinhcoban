@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int dk(int n) {
+    if (n ==0||n==1){
+        return 1;
+    } else {
+        return n*dk(n-1);
+    }
+}
+int tonghop(int n, int k) {
+    if(k>n) {
+        return 0;
+    }
+    return dk(n)/(dk(k)*dk(n-k));
+}
+int main(){
+    int n, k;
+    cout<<"Nhap hai so nguyen duong n va k (n >= k): ";
+    cin>>n>>k;
+    int kq = tonghop(n, k);
+    cout << "Tong hop C = "<<kq<<endl;
+    return 0;
+}

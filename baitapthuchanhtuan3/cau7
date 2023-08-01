@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+bool ktsohoanthien(int a){
+    int b=0;
+    for(int i=1;i<=a/2;i++) {
+        if (a%i==0) {
+            b+=i;
+        }
+    }
+    return b==a;
+}
+void ktsohoanthienbehonn(int N) {
+    cout<<"Cac so hoan thien la: ";
+    for (int i=1;i<N;i++) {
+        if (ktsohoanthien(i)) {
+            cout<< i<<" ";
+        }
+    }
+    cout<<endl;
+}
+int main(){
+    int N;
+    cout<<"Nhap N: ";
+    cin>>N;
+    ktsohoanthienbehonn(N);
+    return 0;
+}
